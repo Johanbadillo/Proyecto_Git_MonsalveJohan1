@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "nombre": "flaca",
+        "precio": 1000,
+        "ingredientes": [
+            {
+                "nomIngrediente": "masa",
+                "disponibilidad": "si"
+            }
+        ]
+    }
+]

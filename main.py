@@ -3,14 +3,14 @@
 # #########################
 
 from Funciones.funcionesJson import *
+from Funciones.funciones import *
 
 lista=abrirJSON()
 salida=True
 
 while(salida):
     lista=abrirJSON()
-    print("Bienvenido a nuestro programa de empanadas Doña Pepa\
-        \n\
+    print("\nBienvenido a nuestro programa de empanadas Doña Pepa\
         \n=====================================\
         \n           Menu Principal             \
         \n======================================\
