@@ -45,11 +45,9 @@ while(salida):
         lista.append(diccionarioNuevo)
         guardarJSON(lista)
     elif(Opcion==2):
-        print("Bienvenido a nuestro programa de empanadas Doña Pepa\
-        \n\
-        \n=====================================\
-        \n           Actualizar Dato           \
-        \n=====================================")
+        print('=====================================\
+            \n           Actualizar Dato            \
+            \n=====================================')
         opcionActu=int(input('Ingrese el ID del dato que deseas editar: '))
         VerDato(lista,opcionActu)
         datoTemporal=lista[opcionActu - 1]
@@ -79,9 +77,19 @@ while(salida):
             }
         lista[opcionActu - 1]=diccionarioAgregar
         guardarJSON(lista)
-
-
-        
+    elif(Opcion==3):
+        print('=====================================\
+            \n           Eliminar Dato            \
+            \n=====================================')
+        opcionActu=int(input('Ingrese el ID del dato que deseas eliminar: '))
+        VerDato(lista,opcionActu)
+        confirmacion=int(input('¿Estas seguro de eliminar este dato?\n1. Si\n2. No\nIngrese una opcion numerica: '))
+        if (confirmacion==1):
+            lista.pop(opcionActu-1)
+            guardarJSON(lista)
+            print("Usuario eliminado!")
+        else:
+            print("Gracias por confirmar!")
 
 
 
