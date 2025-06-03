@@ -50,7 +50,9 @@ while(salida):
         \n=====================================\
         \n           Actualizar Dato           \
         \n=====================================")
-        OpcionActu=int(input('Ingrese el ID del dato que deseas editar'))
+        opcionActu=int(input('Ingrese el ID del dato que deseas editar: '))
+        VerDato(lista,opcionActu)
+
         
 
 
