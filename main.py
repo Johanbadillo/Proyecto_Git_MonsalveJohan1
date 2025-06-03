@@ -25,6 +25,7 @@ while(salida):
         precio=int(input("Ingrese el precio de la empanada sin puntos ni comas: "))
         Caningredientes=int(input("Ingrese la cantidad de ingredientes que tiene la empanada: "))
         diccionarioNuevo={
+            "id": (lista[len(lista)-1]["id"])+1,
             "nombre":Nombre,
             "precio":precio,
             "ingredientes":[]
