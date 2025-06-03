@@ -3,14 +3,14 @@
 # #########################
 
 from Funciones.funcionesJson import *
+from Funciones.funciones import *
 
 lista=abrirJSON()
 salida=True
 
 while(salida):
     lista=abrirJSON()
-    print("Bienvenido a nuestro programa de empanadas Doña Pepa\
-        \n\
+    print("\nBienvenido a nuestro programa de empanadas Doña Pepa\
         \n=====================================\
         \n           Menu Principal             \
         \n======================================\
@@ -25,6 +25,7 @@ while(salida):
         precio=int(input("Ingrese el precio de la empanada sin puntos ni comas: "))
         Caningredientes=int(input("Ingrese la cantidad de ingredientes que tiene la empanada: "))
         diccionarioNuevo={
+            "id": (lista[len(lista)-1]["id"])+1,
             "nombre":Nombre,
             "precio":precio,
             "ingredientes":[]
