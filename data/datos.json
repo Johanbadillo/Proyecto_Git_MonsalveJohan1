@@ -1,10 +1,30 @@
 [
     {
+        "id": 4,
         "nombre": "flaca",
         "precio": 1000,
         "ingredientes": [
             {
                 "nomIngrediente": "masa",
+                "disponibilidad": "si"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "gordis",
+        "precio": 4000,
+        "ingredientes": [
+            {
+                "nomIngrediente": "masa",
+                "disponibilidad": "si"
+            },
+            {
+                "nomIngrediente": "huevo",
+                "disponibilidad": "no"
+            },
+            {
+                "nomIngrediente": "raices",
                 "disponibilidad": "si"
             }
         ]
