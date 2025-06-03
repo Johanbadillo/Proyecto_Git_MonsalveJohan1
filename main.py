@@ -62,3 +62,4 @@ while(salida):
 
 
 # prueba de conflito inicial menu inicial
+# Creador por Johan Styben Monsalve Badillo 
