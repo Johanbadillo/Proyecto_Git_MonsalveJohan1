@@ -15,3 +15,21 @@ while(salida):
         \n3. Eliminar dato\
         \n4. Salir")
     Opcion=int(input("Ingrese una opcion numerica\n"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# prueba de conflito inicial menu inicial
