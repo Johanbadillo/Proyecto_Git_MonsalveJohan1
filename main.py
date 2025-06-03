@@ -90,6 +90,9 @@ while(salida):
             print("Usuario eliminado!")
         else:
             print("Gracias por confirmar!")
+    elif(Opcion==4):
+        print('Gracias por usar nuestro programa hasta la proxima!!!')
+        salida=False
 
 
 
