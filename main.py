@@ -43,6 +43,14 @@ while(salida):
             diccionarioNuevo["ingredientes"].append(data_Ingredientes)
         lista.append(diccionarioNuevo)
         guardarJSON(lista)
+    elif(Opcion==2):
+        print("Bienvenido a nuestro programa de empanadas Doña Pepa\
+        \n\
+        \n=====================================\
+        \n           Actualizar Dato           \
+        \n=====================================")
+        OpcionActu=int(input('Ingrese el ID del dato que deseas editar'))
+        
 
 
 
