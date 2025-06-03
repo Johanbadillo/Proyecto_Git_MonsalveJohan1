@@ -5,26 +5,7 @@
         "precio": 1000,
         "ingredientes": [
             {
-                "nomIngrediente": "masa",
-                "disponibilidad": "si"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "nombre": "gordis",
-        "precio": 4000,
-        "ingredientes": [
-            {
-                "nomIngrediente": "masa",
-                "disponibilidad": "si"
-            },
-            {
-                "nomIngrediente": "huevo",
-                "disponibilidad": "no"
-            },
-            {
-                "nomIngrediente": "raices",
+                "nomIngrediente": "arroz",
                 "disponibilidad": "si"
             }
         ]

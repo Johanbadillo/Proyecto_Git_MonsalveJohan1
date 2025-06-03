@@ -23,14 +23,14 @@ while(salida):
     if(Opcion==1):
         Nombre=str(input("Ingrese el nombre de la empanada: "))
         precio=int(input("Ingrese el precio de la empanada sin puntos ni comas: "))
-        Caningredientes=int(input("Ingrese la cantidad de ingredientes que tiene la empanada: "))
+        CanIngredientes=int(input("Ingrese la cantidad de ingredientes que tiene la empanada: "))
         diccionarioNuevo={
             "id": (lista[len(lista)-1]["id"])+1,
             "nombre":Nombre,
             "precio":precio,
             "ingredientes":[]
         }
-        for i in range (Caningredientes):
+        for i in range (CanIngredientes):
             nomIngrediente=str(input("Ingrese el nombre del ingrediente: "))
             disponibilidad=int(input("¿El ingrediente esta disponible?\n1. Si\n2. No\nIngrese una opcion numerica "))
             if(disponibilidad==1):
@@ -52,6 +52,34 @@ while(salida):
         \n=====================================")
         opcionActu=int(input('Ingrese el ID del dato que deseas editar: '))
         VerDato(lista,opcionActu)
+        datoTemporal=lista[opcionActu - 1]
+        nombreTemporal=str(input('¿Cual nombre deseas colocar?: '))
+        precioTemporal=int(input('¿Que precio desear colocar?: '))
+        CanIngredientes=int(input("Ingrese la cantidad de ingredientes que tiene la empanada: "))
+        listaIngredientesTemporal=[]
+        for i in range (CanIngredientes):
+            nomIngrediente=str(input("Ingrese el nombre del ingrediente: "))
+            disponibilidad=int(input("¿El ingrediente esta disponible?\n1. Si\n2. No\nIngrese una opcion numerica "))
+            if(disponibilidad==1):
+                diccionarioTemporal={
+                    'nomIngrediente':nomIngrediente,
+                    'disponibilidad':'si'
+                }
+            else:
+                diccionarioTemporal={
+                    'nomIngrediente':nomIngrediente,
+                    'disponibilidad':'no'
+                }
+            listaIngredientesTemporal.append(diccionarioTemporal)
+        diccionarioAgregar={
+            "id": lista[opcionActu - 1]['id'],
+            "nombre": nombreTemporal,
+            "precio": precioTemporal,
+            "ingredientes": listaIngredientesTemporal
+            }
+        lista[opcionActu - 1]=diccionarioAgregar
+        guardarJSON(lista)
+
 
         
 
